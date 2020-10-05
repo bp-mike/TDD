@@ -1,0 +1,19 @@
+{
+  "name": "TDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "factorial.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha || test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+}
