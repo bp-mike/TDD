@@ -2,7 +2,7 @@
 // n×(n-1)!
 // _______________ recursive
 function factorial(n){
-    //base case
+ 
     if(n == 0 || n == 1){
         return 1;
     //recursive case
@@ -11,35 +11,26 @@ function factorial(n){
     }
 }
 
-let n = 4;
+let n = 50;
 answer = factorial(n)
 console.log("The factorial of " + n + " is " + answer);
 
-// answer = factorial(3);
-// console.log(answer);
-// module.export = factorial;
-
 
 // ____________ interative
-// function factorial(n){
-//     let answer = 1;
-//     if (n == 0 || n == 1){
-//       return answer;
-//     }else{
-//       for(var i = n; i >= 1; i--){
-//         answer = answer * i;
-//       }
-//       return answer;
-//     }  
-//   }
-//   let n = 4;
-//   answer = factorial(n)
-//   console.log("The factorial of " + n + " is " + answer);
+function factorial2(m){
+    let result = 1;
+    if (m == 0 || m == 1){
+      return result;
+    }else{
+      for(var i = m; i >= 1; i--){
+        result = result * i;
+      }
+      return result;
+    }  
+  }
+  let m = 50;
+  result = factorial2(m)
+  console.log("The factorial of " + m + " is " + result);
 
-function addNumbers(value1, value2){
-  return value1 + value2
-}
-
-
-module.exports = factorial;
-module.exports = addNumbers;
+  module.exports = factorial;
+  module.exports = factorial2;
